@@ -17,7 +17,8 @@ def hello():
 
     resp = {"status": "ok", "err": "", "bic": bic, "project": project}
 
-    return jsonify(resp)
+    #return jsonify(resp)
+    return resp
 
 if __name__ == "__main__":
     application.run()
