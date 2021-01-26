@@ -15,7 +15,7 @@ def hello():
 
     project = MAPPER.get(bic, MAPPER.get("default", ""))
 
-    resp = {"status": "ok", "err": "", "bic": bic, "project": project}
+    resp = {"version": 3, "status": "ok", "err": "", "bic": bic, "project": project}
 
     #return jsonify(resp)
     return resp
