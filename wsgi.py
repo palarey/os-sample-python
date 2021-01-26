@@ -3,7 +3,8 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-    return "Hello New/Modified World!"
+    bic = request.args.get("bic")
+    return "Hello New/Modified World! bic: {}".format(bic)
 
 if __name__ == "__main__":
     application.run()
